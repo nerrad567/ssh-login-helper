@@ -1,10 +1,9 @@
-```markdown
 # SSH Login Helper
 
-[![Version](https://img.shields.io/badge/Version-1.2-blue.svg)]()
-[![PowerShell 5.1+](https://img.shields.io/badge/Requires-PowerShell%205.1%2B-blue.svg)]()
-[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6.svg)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Version 1.2](https://img.shields.io/badge/Version-1.2-blue.svg)](https://github.com/nerrad567/ssh-login-helper/releases)
+[![PowerShell 5.1+](https://img.shields.io/badge/Requires-PowerShell%205.1%2B-blue.svg)](https://docs.microsoft.com/powershell/)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6.svg)](https://www.microsoft.com/en-gb/windows)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 A **PowerShell** script that parses your **SSH config** (using a companion `conf.json`) to provide a quick interactive menu for connecting to remote hosts.
 
@@ -13,7 +12,7 @@ A **PowerShell** script that parses your **SSH config** (using a companion `conf
 ## Description
 
 - **Script Name**: `ssh_login_helper.ps1`
-- **Author**: Darren Gray (with ChatGPT & GrokAI assistance)
+- **Author**: [Darren Gray](https://github.com/nerrad567) (with ChatGPT & GrokAI assistance)
 - **Created**: March 28, 2025
 - **Version**: 1.2  
 
@@ -35,7 +34,7 @@ This script reads your standard OpenSSH `config` file (path configurable in `con
 
 - **Automatic Key Discovery**  
   Searches `~/.ssh` or other directories for valid private keys if none is specified in the config.
-  
+
 - **Alias Handling**  
   If your SSH config has multiple `Host` entries with duplicate aliases, it suffixes them with `(#N - hostname)` to differentiate.
 
@@ -57,7 +56,7 @@ This script reads your standard OpenSSH `config` file (path configurable in `con
    - The path to your SSH config and directories (`Paths.SSHConfig`, `Paths.SSHDir`, `Paths.DefaultSSHDir`).
    - Host descriptions (`HostDescriptions`).
    - Default and per-host settings (`Defaults` and `PerHostSettings`).
-3. **Open PowerShell** in this repo’s directory (or set your `$Env:PATH` to include this folder).
+3. **Open PowerShell** in this repo’s directory (or add this folder to your `$Env:PATH`).
 4. **Run**:
    ```powershell
    .\ssh_login_helper.ps1
@@ -111,7 +110,7 @@ This script reads your standard OpenSSH `config` file (path configurable in `con
 }
 ```
 
-Edit the `HostDescriptions` and `PerHostSettings` to match your own hosts, or remove them if you don’t need special overrides.
+Change the `HostDescriptions` or `PerHostSettings` to match your own hosts, or remove them if you don’t need special overrides.
 
 ---
 
@@ -120,9 +119,9 @@ Edit the `HostDescriptions` and `PerHostSettings` to match your own hosts, or re
 - **PowerShell 5.1+**  
   (Works on Windows 10/11; can be adapted for PowerShell Core on Linux/macOS with small tweaks.)
 - **OpenSSH Client**  
-  Make sure `ssh.exe` is installed/available. On Windows, you can enable it via `Optional Features`.
+  Ensure `ssh.exe` is installed/available. On Windows, you can enable it via *Manage Optional Features*.
 - **A Valid SSH config**  
-  Usually found at `~/.ssh/config` or the path you specify in `conf.json`.
+  Typically at `~/.ssh/config` or as defined in `conf.json`.
 
 ---
 
@@ -137,15 +136,16 @@ Feel free to **fork** this repo and submit a **pull request** if you have improv
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).  
-You are free to use, modify, and distribute this script under the MIT terms.
+This project is licensed under the [MIT License](./LICENSE).  
+You are free to use, modify, and distribute this script under MIT terms.
 
 ---
 
 ### Author
 
 **Darren Gray**  
+Repo: [nerrad567](https://github.com/nerrad567)  
 (Assisted by ChatGPT & GrokAI)
 
-*Thanks for checking out SSH Login Helper! If you find it useful, consider giving the repo a ⭐ on GitHub or sharing feedback via issues or pull requests.*
+*Thanks for checking out **SSH Login Helper**! If you find it useful, consider giving the repo a ⭐ or opening an issue for feedback.*
 ```
