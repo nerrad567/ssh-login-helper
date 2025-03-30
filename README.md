@@ -1,9 +1,12 @@
-# SSH Login Helper
+# 🖥️ SSH Login Helper – Smart SSH Menu via PowerShell
 
-[![Version 1.2](https://img.shields.io/badge/Version-1.2-blue.svg)](https://github.com/nerrad567/ssh-login-helper/releases)
-[![PowerShell 5.1+](https://img.shields.io/badge/Requires-PowerShell%205.1%2B-blue.svg)](https://docs.microsoft.com/powershell/)
-[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6.svg)](https://www.microsoft.com/en-gb/windows)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-blue?style=for-the-badge&logo=windows)
+![Requires](https://img.shields.io/badge/Requires-PowerShell%205.1%2B-4B275F?style=for-the-badge&logo=powershell)
+![Automation](https://img.shields.io/badge/Automation-Config%20Parser%20%2B%20Menu%20Launcher-00BFFF?style=for-the-badge&logo=json)
+![Version](https://img.shields.io/badge/Version-1.2-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Stable%20Release-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
 
 A **PowerShell** script that parses your **SSH config** (using a companion `conf.json`) to provide a quick interactive menu for connecting to remote hosts.
 
