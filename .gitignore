@@ -1,0 +1,31 @@
+# Ignore the real conf.json to protect sensitive data (e.g., users, keys, etc.)
+conf.json
+
+# Keep an example config for reference
+# !conf.example.json
+
+# Ignore environment variable files
+*.env
+*.env.*
+
+# Ignore SSH private key files (common extensions)
+*.pem
+*.key
+*.ppk
+*.pfx
+
+# OS-specific or system files
+.DS_Store
+Thumbs.db
+
+# Editor directories and project settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and backup files
+*.log
+*.bak
+*.old
+*.tmp
