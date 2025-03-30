@@ -14,11 +14,6 @@ A **PowerShell** script that parses your **SSH config** (using a companion `conf
 
 ## Description
 
-- **Script Name**: `ssh_login_helper.ps1`
-- **Author**: [Darren Gray](https://github.com/nerrad567) (with ChatGPT & GrokAI assistance)
-- **Created**: March 28, 2025
-- **Version**: 1.2  
-
 This script reads your standard OpenSSH `config` file (path configurable in `conf.json`) and displays an interactive menu of your hosts. It then tries to connect using:
 1. **SSH agent keys** first (if loaded).
 2. **Specified key** from your SSH config (if any).
@@ -67,7 +62,7 @@ This script reads your standard OpenSSH `config` file (path configurable in `con
 5. **Select a Server** from the menu:
    ```plaintext
    ╔═══════════════════════════════════════════════════════╗
-   ║                SSH Login Helper                      ║
+   ║                   SSH Login Helper                    ║
    ╚═══════════════════════════════════════════════════════╝
 
    1   my-ec2     [ec2-xx-xxx-xx.compute.amazonaws.com]  (ec2-user)  AWS EC2 instance
@@ -137,18 +132,19 @@ Feel free to **fork** this repo and submit a **pull request** if you have improv
 
 ---
 
-## License
+## 📝 Author
 
-This project is licensed under the [MIT License](./LICENSE).  
-You are free to use, modify, and distribute this script under MIT terms.
+**Darren Gray**
+Researched, developed, and refined with assistance from ChatGPT and Grok AI
+
+## 📬 Contact
+
+- **GitHub**: [@nerrad567](https://github.com/nerrad567)
+- **Email**: darren.g@outlook.com
+- **LinkedIn**: [linkedin.com/in/darren-gray-70258a169](https://www.linkedin.com/in/darren-gray-70258a169)
+
+### 📄 License
+
+MIT
 
 ---
-
-### Author
-
-**Darren Gray**  
-Repo: [nerrad567](https://github.com/nerrad567)  
-(Assisted by ChatGPT & GrokAI)
-
-*Thanks for checking out **SSH Login Helper**! If you find it useful, consider giving the repo a ⭐ or opening an issue for feedback.*
-```
