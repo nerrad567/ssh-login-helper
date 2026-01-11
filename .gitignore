@@ -13,6 +13,8 @@ conf.json
 *.key
 *.ppk
 *.pfx
+*.cer
+*.crt
 
 # OS-specific or system files
 .DS_Store
