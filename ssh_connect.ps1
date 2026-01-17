@@ -72,8 +72,8 @@ function Initialize-ConfigFile {
             "//"      = "This file is NOT your SSH config. It contains optional metadata and launch settings for your SSH tool."
             "//_info" = "Edit this to describe hosts (HostDescriptions), set default connection settings (Defaults: User, Port, PostConnectCommand), and override settings per host (PerHostSettings: User, Port, PostConnectCommand). SSH config settings (HostName, User, IdentityFile, Port) take highest priority, followed by PerHostSettings, then Defaults."
             "Paths" = @{
-                "SSHConfig"      = "%USERPROFILE%\OneDrive\.ssh\config"
-                "SSHDir"         = "%USERPROFILE%\OneDrive\.ssh"
+                "SSHConfig"      = "%USERPROFILE%\.ssh\config"
+                "SSHDir"         = "%USERPROFILE%\.ssh"
                 "DefaultSSHDir"  = "%USERPROFILE%\.ssh"
             }
             "HostDescriptions" = [ordered]@{
@@ -423,7 +423,7 @@ function Connect-Server {
     }
 
     # Base SSH arguments
-    $baseArguments = "-o ServerAliveInterval=60 -o ServerAliveCountMax=3 -o UserKnownHostsFile=`"$sshDirKnownHosts`" -o GlobalKnownHostsFile=NUL -p $currentPort $currentUser@$($server.RemoteAddress)"
+    $baseArguments = "-o ServerAliveInterval=60 -o ServerAliveCountMax=3 -o UserKnownHostsFile=`"$sshDirKnownHosts`" -o GlobalKnownHostsFile=NUL -p $currentPort $currentUser@$($server.Alias)"
     if ($postCmd) { $baseArguments += " '$postCmd'" }
 
     # Try agent keys first
